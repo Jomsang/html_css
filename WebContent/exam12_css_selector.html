@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+		
+			/* 클래스1,클래스2 동시에 && 갖고 있는거 띄어쓰기 안 함*/
+		
+		/*
+			.class1.class2	{    
+					color:green;
+				}	
+				*/
+				
+				/* 클래스1, 클래스2 || or 개념 */
+			/*	.class1, .class2	{    
+					color:red;
+				}
+				*/
+				
+				
+				
+			/* 클래스3인 엘리먼트의 바로 밑(자손)중에서 내용중에서 class4가 선택*/
+		/*	.class3 .class4	{    
+					color:blue;
+				}	
+				*/
+			/* 클래스3인 엘리먼트의 바로 밑(자식)에서 내용중에서 class4가 선택*/
+			.class3 > .class4	{    
+					color:blue;
+				}	
+			
+			
+		</style>
+</head>
+<body>
+	
+	<p>this is content1</p>
+	<p class="class1">this is content2</p>
+	<p class="class1 class2">this is content3</p><!-- 클래스1, 클래스2 동시에 갖고 있는거 -->
+	<p class="class2">this is content4</p>
+	<div class="class3">
+		<p>this is content5</p>
+		<p class="class4">this is content6</p>
+	</div>
+	
+	
+</body>
+</html>
